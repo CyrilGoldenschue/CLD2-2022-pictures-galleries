@@ -59,3 +59,13 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+server "web23.swisscenter.com", user: "maw11_8", ssh_options: {
+    user: 'maw11_8',
+    keys: %w(.ssh/CLD2no),
+    forward_agent: false,
+    auth_methods: %w(publickey)
+}
+
+set :deploy_to, "/home/maw11_8/cld2.cs/"
+

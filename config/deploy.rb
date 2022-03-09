@@ -3,7 +3,10 @@ lock "~> 3.16.0"
 
 set :application, "CLD2-2022-pictures-galleries"
 set :repo_url, "https://github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries"
+#set :repo_url, "git@github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries.git"
 
+set :deploy_to, "/home/maw11_8/cld2.cs"
+set :branch, 'main'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 

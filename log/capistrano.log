@@ -2,3 +2,121 @@
   INFO ---------------------------------------------------------------------------
   INFO START 2022-02-18 08:29:17 +0100 cap production deploy:check
   INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 08:56:58 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [2101b765] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [2101b765] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 08:58:29 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [be64e9e9] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [be64e9e9] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 08:58:47 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [4aaa143d] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [4aaa143d] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 09:03:00 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [75022642] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [75022642] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 09:06:10 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [59e260eb] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [59e260eb] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 09:07:32 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [8c82dded] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [8c82dded] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 09:07:42 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [61b7d024] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [61b7d024] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 09:20:03 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [62fc4d8b] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [62fc4d8b] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 09:21:49 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [357b1893] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [357b1893] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-02-18 09:31:48 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [49b370e1] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [49b370e1] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:36:10 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4d69bbd0] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [4d69bbd0] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:40:52 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8d7a426f] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [8d7a426f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:46:36 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6da7d498] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [6da7d498] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:48:35 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6d7af38b] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [6d7af38b] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:49:31 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4a2c5a6c] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [4a2c5a6c] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:52:04 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [60a7b57c] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [60a7b57c] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:56:37 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5966a29a] Running /usr/bin/env mkdir -p /tmp as maw11_8@cld2.cs
+ DEBUG [5966a29a] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:59:02 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c7382be5] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [c7382be5] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 16:00:36 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c3ea3f2f] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [c3ea3f2f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 16:03:45 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [85ae78f6] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [85ae78f6] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 16:11:34 +0100 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [5650dbe0] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [5650dbe0] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5650dbe0] Finished in 5.189 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e62752dd97a503fd138a.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e62752dd97a503fd138a.sh 100.0%
+  INFO [118965e9] Running /usr/bin/env chmod 700 /tmp/git-ssh-e62752dd97a503fd138a.sh as maw11_8@web23.swisscenter.com
+ DEBUG [118965e9] Command: /usr/bin/env chmod 700 /tmp/git-ssh-e62752dd97a503fd138a.sh
+  INFO [118965e9] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [101c4c63] Running /usr/bin/env git ls-remote https://github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries HEAD as maw11_8@web23.swisscenter.com
+ DEBUG [101c4c63] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e62752dd97a503fd138a.sh" ; /usr/bin/env git ls-remote https://github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries HEAD )
+ DEBUG [101c4c63] 	cc4ce733534f27a32113ff2c983cdf956ed1d11e	HEAD
+  INFO [101c4c63] Finished in 0.274 seconds with exit status 0 (successful).
+  INFO [1721d8f1] Running /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/shared /home/maw11_8/cld2.cs/releases as maw11_8@web23.swisscenter.com
+ DEBUG [1721d8f1] Command: /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/shared /home/maw11_8/cld2.cs/releases
+  INFO [1721d8f1] Finished in 0.088 seconds with exit status 0 (successful).
