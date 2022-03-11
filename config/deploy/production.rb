@@ -67,5 +67,16 @@ server "web23.swisscenter.com", user: "maw11_8", ssh_options: {
     auth_methods: %w(publickey)
 }
 
-set :deploy_to, "/home/maw11_8/cld2.cs/"
+task :copy_dotenv do
+  on roles(:all) do
+    execute :cp, "#{shared_path}/.env #{release_path}/.env"
+  end
+end
 
+set :laravel_version, 8.0
+set :laravel_upload_dotenv_file_on_deploy, false
+# swisscenter disables acls, instead use chmod
+set :laravel_set_acl_paths, false
+
+after 'composer:run', 'copy_dotenv'
+after 'composer:run', 'laravel:migrate'

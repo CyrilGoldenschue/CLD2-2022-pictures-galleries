@@ -16,3 +16,4 @@ use App\Http\Controllers\PictureController;
 
 Route::resource('galleries', GalleryController::class)->except(['edit','update','destroy']);
 Route::resource('galleries.pictures', PictureController::class)->except(['edit','update']);
+
