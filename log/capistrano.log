@@ -547,3 +547,222 @@ db5601f94bba03187287474e1ed22667ccb96631) deployed as release 20220309155222 by 
 db5601f94bba03187287474e1ed22667ccb96631) deployed as release 20220309155222 by cyril" >> /home/maw11_8/cld2.cs/revisions.log
  DEBUG [3b7f3656] 	Info: This virtualhost uses php80.
   INFO [3b7f3656] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-11 08:14:43 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ed0b596d] Running /usr/bin/env mkdir -p /tmp as maw11_8@web23.swisscenter.com
+ DEBUG [ed0b596d] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ed0b596d] Finished in 13.412 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-f37606d4f0431f2d9ccb.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f37606d4f0431f2d9ccb.sh 100.0%
+  INFO [1b122e1a] Running /usr/bin/env chmod 700 /tmp/git-ssh-f37606d4f0431f2d9ccb.sh as maw11_8@web23.swisscenter.com
+ DEBUG [1b122e1a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-f37606d4f0431f2d9ccb.sh
+  INFO [1b122e1a] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [10c2fbfd] Running /usr/bin/env git ls-remote https://github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries HEAD as maw11_8@web23.swisscenter.com
+ DEBUG [10c2fbfd] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f37606d4f0431f2d9ccb.sh" ; /usr/bin/env git ls-remote https://github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries HEAD )
+ DEBUG [10c2fbfd] 	455c9cf61e59e9282b550afd388123e0b372f899	HEAD
+  INFO [10c2fbfd] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO [25a03687] Running /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/shared /home/maw11_8/cld2.cs/releases as maw11_8@web23.swisscenter.com
+ DEBUG [25a03687] Command: /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/shared /home/maw11_8/cld2.cs/releases
+  INFO [25a03687] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [5d3c1e42] Running /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/shared/storage/app /home/maw11_8/cld2.cs/shared/storage/framework/cache /home/maw11_8/cld2.cs/shared/storage/framework/sessions /home/maw11_8/cld2.cs/shared/storage/framework/views /home/maw11_8/cld2.cs/shared/storage/logs as maw11_8@web23.swisscenter.com
+ DEBUG [5d3c1e42] Command: /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/shared/storage/app /home/maw11_8/cld2.cs/shared/storage/framework/cache /home/maw11_8/cld2.cs/shared/storage/framework/sessions /home/maw11_8/cld2.cs/shared/storage/framework/views /home/maw11_8/cld2.cs/shared/storage/logs
+  INFO [5d3c1e42] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [5045de79] Running [ -f /home/maw11_8/cld2.cs/current/REVISION ] as maw11_8@web23.swisscenter.com
+ DEBUG [5045de79] Command: [ -f /home/maw11_8/cld2.cs/current/REVISION ]
+ DEBUG [5045de79] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [f6cf9622] Running /usr/bin/env cat /home/maw11_8/cld2.cs/current/REVISION 2>/dev/null as maw11_8@web23.swisscenter.com
+ DEBUG [f6cf9622] Command: /usr/bin/env cat /home/maw11_8/cld2.cs/current/REVISION 2>/dev/null
+ DEBUG [f6cf9622] 	Info: This virtualhost uses php80.
+db5601f94bba03187287474e1ed22667ccb96631
+ DEBUG [f6cf9622] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [57d0587d] Running if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [57d0587d] Command: if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi
+ DEBUG [57d0587d] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [54c3f220] Running /usr/bin/env mkdir -p storage/app as maw11_8@web23.swisscenter.com
+ DEBUG [54c3f220] Command: cd /home/maw11_8/cld2.cs/shared && /usr/bin/env mkdir -p storage/app
+ DEBUG [54c3f220] 	Info: This virtualhost uses php80.
+  INFO [54c3f220] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [2153e544] Running if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [2153e544] Command: if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi
+ DEBUG [2153e544] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [6353fa78] Running /usr/bin/env mkdir -p storage/framework/cache as maw11_8@web23.swisscenter.com
+ DEBUG [6353fa78] Command: cd /home/maw11_8/cld2.cs/shared && /usr/bin/env mkdir -p storage/framework/cache
+ DEBUG [6353fa78] 	Info: This virtualhost uses php80.
+  INFO [6353fa78] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [1c809549] Running if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [1c809549] Command: if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi
+ DEBUG [1c809549] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [d1d57816] Running /usr/bin/env mkdir -p storage/framework/sessions as maw11_8@web23.swisscenter.com
+ DEBUG [d1d57816] Command: cd /home/maw11_8/cld2.cs/shared && /usr/bin/env mkdir -p storage/framework/sessions
+ DEBUG [d1d57816] 	Info: This virtualhost uses php80.
+  INFO [d1d57816] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [6ec37091] Running if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [6ec37091] Command: if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi
+ DEBUG [6ec37091] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [2b0c77fa] Running /usr/bin/env mkdir -p storage/framework/views as maw11_8@web23.swisscenter.com
+ DEBUG [2b0c77fa] Command: cd /home/maw11_8/cld2.cs/shared && /usr/bin/env mkdir -p storage/framework/views
+ DEBUG [2b0c77fa] 	Info: This virtualhost uses php80.
+  INFO [2b0c77fa] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [9b9b1a0a] Running if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [9b9b1a0a] Command: if test ! -d /home/maw11_8/cld2.cs/shared; then echo "Directory does not exist '/home/maw11_8/cld2.cs/shared'" 1>&2; false; fi
+ DEBUG [9b9b1a0a] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [0328e524] Running /usr/bin/env mkdir -p storage/logs as maw11_8@web23.swisscenter.com
+ DEBUG [0328e524] Command: cd /home/maw11_8/cld2.cs/shared && /usr/bin/env mkdir -p storage/logs
+ DEBUG [0328e524] 	Info: This virtualhost uses php80.
+  INFO [0328e524] Finished in 0.107 seconds with exit status 0 (successful).
+ DEBUG [09c4f054] Running [ -f /home/maw11_8/cld2.cs/repo/HEAD ] as maw11_8@web23.swisscenter.com
+ DEBUG [09c4f054] Command: [ -f /home/maw11_8/cld2.cs/repo/HEAD ]
+ DEBUG [09c4f054] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/maw11_8/cld2.cs/repo
+ DEBUG [38dd948f] Running if test ! -d /home/maw11_8/cld2.cs/repo; then echo "Directory does not exist '/home/maw11_8/cld2.cs/repo'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [38dd948f] Command: if test ! -d /home/maw11_8/cld2.cs/repo; then echo "Directory does not exist '/home/maw11_8/cld2.cs/repo'" 1>&2; false; fi
+ DEBUG [38dd948f] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [f19cc91e] Running /usr/bin/env git remote set-url origin https://github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries as maw11_8@web23.swisscenter.com
+ DEBUG [f19cc91e] Command: cd /home/maw11_8/cld2.cs/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f37606d4f0431f2d9ccb.sh" ; /usr/bin/env git remote set-url origin https://github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries )
+ DEBUG [f19cc91e] 	Info: This virtualhost uses php80.
+  INFO [f19cc91e] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [219af8ff] Running /usr/bin/env git remote update --prune as maw11_8@web23.swisscenter.com
+ DEBUG [219af8ff] Command: cd /home/maw11_8/cld2.cs/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f37606d4f0431f2d9ccb.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [219af8ff] 	Info: This virtualhost uses php80.
+ DEBUG [219af8ff] 	Fetching origin
+ DEBUG [219af8ff] 	From https://github.com/CyrilGoldenschue/CLD2-2022-pictures-galleries
+ DEBUG [219af8ff] 	   db5601f..455c9cf  main       -> main
+  INFO [219af8ff] Finished in 0.456 seconds with exit status 0 (successful).
+ DEBUG [82e6e760] Running if test ! -d /home/maw11_8/cld2.cs/repo; then echo "Directory does not exist '/home/maw11_8/cld2.cs/repo'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [82e6e760] Command: if test ! -d /home/maw11_8/cld2.cs/repo; then echo "Directory does not exist '/home/maw11_8/cld2.cs/repo'" 1>&2; false; fi
+ DEBUG [82e6e760] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [df2a4130] Running /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/releases/20220311071458 as maw11_8@web23.swisscenter.com
+ DEBUG [df2a4130] Command: cd /home/maw11_8/cld2.cs/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f37606d4f0431f2d9ccb.sh" ; /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/releases/20220311071458 )
+ DEBUG [df2a4130] 	Info: This virtualhost uses php80.
+  INFO [df2a4130] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [55cafb42] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_8/cld2.cs/releases/20220311071458 as maw11_8@web23.swisscenter.com
+ DEBUG [55cafb42] Command: cd /home/maw11_8/cld2.cs/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f37606d4f0431f2d9ccb.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_8/cld2.cs/releases/20220311071458 )
+ DEBUG [55cafb42] 	Info: This virtualhost uses php80.
+  INFO [55cafb42] Finished in 0.109 seconds with exit status 0 (successful).
+ DEBUG [f6afe43a] Running if test ! -d /home/maw11_8/cld2.cs/repo; then echo "Directory does not exist '/home/maw11_8/cld2.cs/repo'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [f6afe43a] Command: if test ! -d /home/maw11_8/cld2.cs/repo; then echo "Directory does not exist '/home/maw11_8/cld2.cs/repo'" 1>&2; false; fi
+ DEBUG [f6afe43a] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [ada26832] Running /usr/bin/env git rev-list --max-count=1 main as maw11_8@web23.swisscenter.com
+ DEBUG [ada26832] Command: cd /home/maw11_8/cld2.cs/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f37606d4f0431f2d9ccb.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [ada26832] 	Info: This virtualhost uses php80.
+ DEBUG [ada26832] 	455c9cf61e59e9282b550afd388123e0b372f899
+ DEBUG [ada26832] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [6fcab20e] Running if test ! -d /home/maw11_8/cld2.cs/releases/20220311071458; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases/20220311071458'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [6fcab20e] Command: if test ! -d /home/maw11_8/cld2.cs/releases/20220311071458; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases/20220311071458'" 1>&2; false; fi
+ DEBUG [6fcab20e] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [acb783aa] Running /usr/bin/env echo "Info: This virtualhost uses php80.
+455c9cf61e59e9282b550afd388123e0b372f899" > REVISION as maw11_8@web23.swisscenter.com
+ DEBUG [acb783aa] Command: cd /home/maw11_8/cld2.cs/releases/20220311071458 && /usr/bin/env echo "Info: This virtualhost uses php80.
+455c9cf61e59e9282b550afd388123e0b372f899" > REVISION
+ DEBUG [acb783aa] 	Info: This virtualhost uses php80.
+  INFO [acb783aa] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [5f7d5904] Running /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/releases/20220311071458/storage /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework as maw11_8@web23.swisscenter.com
+ DEBUG [5f7d5904] Command: /usr/bin/env mkdir -p /home/maw11_8/cld2.cs/releases/20220311071458/storage /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework
+  INFO [5f7d5904] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [7e3eee2d] Running [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/app ] as maw11_8@web23.swisscenter.com
+ DEBUG [7e3eee2d] Command: [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/app ]
+ DEBUG [7e3eee2d] Finished in 0.086 seconds with exit status 1 (failed).
+ DEBUG [194912d3] Running [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/app ] as maw11_8@web23.swisscenter.com
+ DEBUG [194912d3] Command: [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/app ]
+ DEBUG [194912d3] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [04112592] Running /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/app as maw11_8@web23.swisscenter.com
+ DEBUG [04112592] Command: /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/app
+  INFO [04112592] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [b6fb590c] Running /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/app /home/maw11_8/cld2.cs/releases/20220311071458/storage/app as maw11_8@web23.swisscenter.com
+ DEBUG [b6fb590c] Command: /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/app /home/maw11_8/cld2.cs/releases/20220311071458/storage/app
+  INFO [b6fb590c] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [2ff08c86] Running [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/cache ] as maw11_8@web23.swisscenter.com
+ DEBUG [2ff08c86] Command: [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/cache ]
+ DEBUG [2ff08c86] Finished in 0.093 seconds with exit status 1 (failed).
+ DEBUG [838d1ae4] Running [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/cache ] as maw11_8@web23.swisscenter.com
+ DEBUG [838d1ae4] Command: [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/cache ]
+ DEBUG [838d1ae4] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [94d6e53b] Running /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/cache as maw11_8@web23.swisscenter.com
+ DEBUG [94d6e53b] Command: /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/cache
+  INFO [94d6e53b] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [09cf25cd] Running /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/framework/cache /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/cache as maw11_8@web23.swisscenter.com
+ DEBUG [09cf25cd] Command: /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/framework/cache /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/cache
+  INFO [09cf25cd] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [d324836f] Running [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/sessions ] as maw11_8@web23.swisscenter.com
+ DEBUG [d324836f] Command: [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/sessions ]
+ DEBUG [d324836f] Finished in 0.089 seconds with exit status 1 (failed).
+ DEBUG [8e551cab] Running [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/sessions ] as maw11_8@web23.swisscenter.com
+ DEBUG [8e551cab] Command: [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/sessions ]
+ DEBUG [8e551cab] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [865bd954] Running /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/sessions as maw11_8@web23.swisscenter.com
+ DEBUG [865bd954] Command: /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/sessions
+  INFO [865bd954] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [578f47ba] Running /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/framework/sessions /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/sessions as maw11_8@web23.swisscenter.com
+ DEBUG [578f47ba] Command: /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/framework/sessions /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/sessions
+  INFO [578f47ba] Finished in 0.311 seconds with exit status 0 (successful).
+ DEBUG [c073c91e] Running [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/views ] as maw11_8@web23.swisscenter.com
+ DEBUG [c073c91e] Command: [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/views ]
+ DEBUG [c073c91e] Finished in 0.276 seconds with exit status 1 (failed).
+ DEBUG [fb2e04a4] Running [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/views ] as maw11_8@web23.swisscenter.com
+ DEBUG [fb2e04a4] Command: [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/views ]
+ DEBUG [fb2e04a4] Finished in 0.235 seconds with exit status 0 (successful).
+  INFO [1f2c767d] Running /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/views as maw11_8@web23.swisscenter.com
+ DEBUG [1f2c767d] Command: /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/views
+  INFO [1f2c767d] Finished in 0.181 seconds with exit status 0 (successful).
+  INFO [c38fe636] Running /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/framework/views /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/views as maw11_8@web23.swisscenter.com
+ DEBUG [c38fe636] Command: /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/framework/views /home/maw11_8/cld2.cs/releases/20220311071458/storage/framework/views
+  INFO [c38fe636] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG [cb145e9f] Running [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/logs ] as maw11_8@web23.swisscenter.com
+ DEBUG [cb145e9f] Command: [ -L /home/maw11_8/cld2.cs/releases/20220311071458/storage/logs ]
+ DEBUG [cb145e9f] Finished in 0.126 seconds with exit status 1 (failed).
+ DEBUG [ff586515] Running [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/logs ] as maw11_8@web23.swisscenter.com
+ DEBUG [ff586515] Command: [ -d /home/maw11_8/cld2.cs/releases/20220311071458/storage/logs ]
+ DEBUG [ff586515] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [7e5aea2e] Running /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/logs as maw11_8@web23.swisscenter.com
+ DEBUG [7e5aea2e] Command: /usr/bin/env rm -rf /home/maw11_8/cld2.cs/releases/20220311071458/storage/logs
+  INFO [7e5aea2e] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [55b801ba] Running /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/logs /home/maw11_8/cld2.cs/releases/20220311071458/storage/logs as maw11_8@web23.swisscenter.com
+ DEBUG [55b801ba] Command: /usr/bin/env ln -s /home/maw11_8/cld2.cs/shared/storage/logs /home/maw11_8/cld2.cs/releases/20220311071458/storage/logs
+  INFO [55b801ba] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [20f4c384] Running if test ! -d /home/maw11_8/cld2.cs/releases/20220311071458; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases/20220311071458'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [20f4c384] Command: if test ! -d /home/maw11_8/cld2.cs/releases/20220311071458; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases/20220311071458'" 1>&2; false; fi
+ DEBUG [20f4c384] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [5d992a69] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as maw11_8@web23.swisscenter.com
+ DEBUG [5d992a69] Command: cd /home/maw11_8/cld2.cs/releases/20220311071458 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+ DEBUG [5d992a69] 	Info: This virtualhost uses php80.
+  INFO [5d992a69] Finished in 2.297 seconds with exit status 0 (successful).
+ DEBUG [b739f66d] Running if test ! -d /home/maw11_8/cld2.cs/releases/20220311071458; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases/20220311071458'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [b739f66d] Command: if test ! -d /home/maw11_8/cld2.cs/releases/20220311071458; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases/20220311071458'" 1>&2; false; fi
+ DEBUG [b739f66d] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [36752318] Running /usr/bin/env php artisan storage:link --env=production as maw11_8@web23.swisscenter.com
+ DEBUG [36752318] Command: cd /home/maw11_8/cld2.cs/releases/20220311071458 && /usr/bin/env php artisan storage:link --env=production
+ DEBUG [36752318] 	Info: This virtualhost uses php80.
+ DEBUG [36752318] 	The [/home/maw11_8/cld2.cs/releases/20220311071458/public/storage] link has been connected to [/home/maw11_8/cld2.cs/releases/20220311071458/storage/app/public].
+ DEBUG [36752318] 	The links have been created.
+  INFO [36752318] Finished in 0.250 seconds with exit status 0 (successful).
+  INFO [fa8ce414] Running /usr/bin/env cp /home/maw11_8/cld2.cs/shared/.env /home/maw11_8/cld2.cs/releases/20220311071458/.env as maw11_8@web23.swisscenter.com
+ DEBUG [fa8ce414] Command: /usr/bin/env cp /home/maw11_8/cld2.cs/shared/.env /home/maw11_8/cld2.cs/releases/20220311071458/.env
+  INFO [fa8ce414] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [2b9c5af4] Running if test ! -d /home/maw11_8/cld2.cs/releases/20220311071458; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases/20220311071458'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [2b9c5af4] Command: if test ! -d /home/maw11_8/cld2.cs/releases/20220311071458; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases/20220311071458'" 1>&2; false; fi
+ DEBUG [2b9c5af4] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [01194596] Running /usr/bin/env php artisan migrate --force --env=production as maw11_8@web23.swisscenter.com
+ DEBUG [01194596] Command: cd /home/maw11_8/cld2.cs/releases/20220311071458 && /usr/bin/env php artisan migrate --force --env=production
+ DEBUG [01194596] 	Info: This virtualhost uses php80.
+ DEBUG [01194596] 	Nothing to migrate.
+  INFO [01194596] Finished in 0.294 seconds with exit status 0 (successful).
+  INFO [47fb1f80] Running /usr/bin/env ln -s /home/maw11_8/cld2.cs/releases/20220311071458 /home/maw11_8/cld2.cs/releases/current as maw11_8@web23.swisscenter.com
+ DEBUG [47fb1f80] Command: /usr/bin/env ln -s /home/maw11_8/cld2.cs/releases/20220311071458 /home/maw11_8/cld2.cs/releases/current
+  INFO [47fb1f80] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO [924fb4f8] Running /usr/bin/env mv /home/maw11_8/cld2.cs/releases/current /home/maw11_8/cld2.cs as maw11_8@web23.swisscenter.com
+ DEBUG [924fb4f8] Command: /usr/bin/env mv /home/maw11_8/cld2.cs/releases/current /home/maw11_8/cld2.cs
+  INFO [924fb4f8] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [092f64c3] Running /usr/bin/env ls -x /home/maw11_8/cld2.cs/releases as maw11_8@web23.swisscenter.com
+ DEBUG [092f64c3] Command: /usr/bin/env ls -x /home/maw11_8/cld2.cs/releases
+ DEBUG [092f64c3] 	20220309154353	20220309155222	20220311071458
+ DEBUG [092f64c3] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [4c6bd9f0] Running if test ! -d /home/maw11_8/cld2.cs/releases; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases'" 1>&2; false; fi as maw11_8@web23.swisscenter.com
+ DEBUG [4c6bd9f0] Command: if test ! -d /home/maw11_8/cld2.cs/releases; then echo "Directory does not exist '/home/maw11_8/cld2.cs/releases'" 1>&2; false; fi
+ DEBUG [4c6bd9f0] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [f27dd70a] Running /usr/bin/env echo "Branch main (at Info: This virtualhost uses php80.
+455c9cf61e59e9282b550afd388123e0b372f899) deployed as release 20220311071458 by cyril" >> /home/maw11_8/cld2.cs/revisions.log as maw11_8@web23.swisscenter.com
+ DEBUG [f27dd70a] Command: cd /home/maw11_8/cld2.cs/releases && /usr/bin/env echo "Branch main (at Info: This virtualhost uses php80.
+455c9cf61e59e9282b550afd388123e0b372f899) deployed as release 20220311071458 by cyril" >> /home/maw11_8/cld2.cs/revisions.log
+ DEBUG [f27dd70a] 	Info: This virtualhost uses php80.
+  INFO [f27dd70a] Finished in 0.113 seconds with exit status 0 (successful).
