@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Picture;
 use App\Models\Gallery;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 
 class PictureController extends Controller
 {
@@ -39,10 +40,11 @@ class PictureController extends Controller
     {
         $picture = new Picture($request->all());
         $picture->gallery()->associate($gallery);
-
+        
         $picture->path = $request->file('picture_file')->store(
-            'galleries/'.$gallery->id, 'public'
+            'galleries/'.$gallery->id, 'local'
         );
+
 
         $picture->save();
 
@@ -55,9 +57,15 @@ class PictureController extends Controller
      * @param  \App\Models\Picture  $picture
      * @return \Illuminate\Http\Response
      */
-    public function show(Picture $picture)
+    public function show(Gallery $gallery, Picture $picture, Request $request)
     {
-        //
+        if(\Str::startsWith($request->header("Accept"), ["image/"])){
+            //rendre le fichier
+            return \Storage::download($picture->path);
+        }else{
+            //sinon rendre le html
+            return view();
+        }
     }
 
     /**
