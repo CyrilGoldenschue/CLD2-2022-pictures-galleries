@@ -49,6 +49,6 @@ class GalleryController extends Controller
     public function show(Gallery $gallery)
     {
         //
-        return redirect()->route('galleries.pictures.index');
+        return redirect()->route('galleries.pictures.index', $gallery);
     }
 }
