@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Picture;
 use App\Models\Gallery;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 
@@ -36,15 +37,15 @@ class PictureController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Gallery $gallery, Request $request)
+    public function store(Gallery $gallery, Request $request): RedirectResponse
     {
-        $picture = new Picture($request->all());
+        $picture = Picture::make($request->all());
         $picture->gallery()->associate($gallery);
-        
-        $picture->path = $request->file('picture_file')->store(
-            'galleries/'.$gallery->id, 'local'
-        );
 
+        $picture->path = $request->file('picture_file')?->store(
+            'cyrsou-galleries/'.$gallery->id,
+            's3'
+        );
 
         $picture->save();
 
@@ -61,7 +62,10 @@ class PictureController extends Controller
     {
         if(\Str::startsWith($request->header("Accept"), ["image/"])){
             //rendre le fichier
-            return \Storage::download($picture->path);
+            //return \Storage::download($picture->path);
+            return redirect(\Storage::disk("s3")->temporaryUrl($picture->path, now()->addMinutes(1)));
+            //$picture->path = \Storage::disk('s3')->put('galleries/'.$gallery->id, $request->file('picture_file'));
+
         }else{
             //sinon rendre le html
             return view();
