@@ -62,6 +62,7 @@ class PictureController extends Controller
     {
         if(\Str::startsWith($request->header("Accept"), ["image/"])){
             //rendre le fichier
+
             //return \Storage::download($picture->path);
             return redirect(\Storage::disk("s3")->temporaryUrl($picture->path, now()->addMinutes(1)));
             //$picture->path = \Storage::disk('s3')->put('galleries/'.$gallery->id, $request->file('picture_file'));
